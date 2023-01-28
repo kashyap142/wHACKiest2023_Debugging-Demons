@@ -82,7 +82,7 @@ section {
   cursor: pointer;
 }
 .login-form {
-  position: fixed;
+  position: fixed; 
   top: 0;
   left: 0;
   z-index: 2;
@@ -515,21 +515,39 @@ p{
   position:relative;
 
 }
-.dropdown-content {
-  right:0;
-  display: none;
-  position: absolute;
-  background-color: #f1f1f1;
-  min-width: 150px;
-  color:black;
-  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-  overflow: auto;
-  /* z-index: 1; */
-}
+
 ul{
   display: flex;
   flex-direction: column;
 }
 
 
-.user:hover .dropdown-content {display: block;}
+.user {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  background-color: #F5FEFF;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+  position: absolute;
+  right: 0px;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.user:hover .dropdown-content {
+  display: block;
+}
+
+.btn2 {
+  margin-left: 30px;
+}
