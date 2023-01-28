@@ -1,121 +1,93 @@
-<!DOCTYPE html>
-<html lang="en">
 
-<head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>ManMandir</title>
-    <link rel="stylesheet" href="indexaftersignup.css" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" />
-</head>
-
-<body>
-    <header class="header">
-        <nav class="navbar">
-            <div class="logo">travels</div>
-            <ul class="nav-item">
-                <p>WELCOME</p>
-            </ul>
-            
-
-            <div class="icons">
-                <div class="user">
-                    <i class="fa-solid fa-user"></i>
-                    <div class="dropdown-content">
-                        <ul>
-                            <li><a href="#">Profile</a></li>
-                            <li><a href="#">Settings</a></li>
-                            <li><a href="index.html">Logout</a></li>
-                        </ul>
+    </div><!DOCTYPE html>
+    <html lang="en">
+    
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>ManMandir</title>
+        <link rel="stylesheet" href="css/indexaftersignup.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" />
+    </head>
+    
+    <body>
+        <header class="header">
+            <nav class="navbar">
+                <div class="logo">travels</div>
+                <ul class="nav-item">
+                    <p>WELCOME</p>
+                </ul>
+                
+    
+                <div class="icons">
+                    <p class="usernamedisplay"></p>
+                    <div class="user">
+                        <i class="fa-solid fa-user"></i>
+                        <div class="dropdown-content">
+                            <ul>
+                                <li><a href="#">Profile</a></li>
+                                <li><a href="#">Settings</a></li>
+                                <li><a href="index.html">Logout</a></li>
+                            </ul>
+                        </div>
                     </div>
                 </div>
+                
+            </nav>
+        </header>
+    
+        <section class="home" id="home">
+            <div class="content">
+                <h3>adventure is worthwhile</h3>
+                <p>discover new places with us, adventure awaits</p>
+                <a href="#book" class="btn">Discover</a>
+                <a href="add-new-place.html" class="btn btn2">Add More</a>
             </div>
-            
-        </nav>
-    </header>
-
-    <section class="home" id="home">
-        <div class="content">
-            <h3>adventure is worthwhile</h3>
-            <p>discover new places with us, adventure awaits</p>
-            <a href="#book" class="btn">Discover</a>
-            <a href="add-new-place.html" class="btn btn2">Add More</a>
-        </div>
-
-
-
-        <div class="video-container">
-            <video src="images/vid-1.mp4" id="video-slider" loop autoplay muted></video>
-        </div>
-    </section>
-
-    <!-- book -->
-    <div class="book" id="book">
-        <div class="heading">DISCOVER</div>
-        <div class="row">
-            <div class="image">
-                <img src="images/book-img.svg" alt="" />
+    
+    
+    
+            <div class="video-container">
+                <video src="images/vid-1.mp4" id="video-slider" loop autoplay muted></video>
             </div>
-            <form action="">
-                <div class="input-box">
-                    <label for="">where to</label>
-                    <input type="text" placeholder="place name" />
+        </section>
+    
+        <!-- book -->
+        <div class="book" id="book">
+            <div class="heading">DISCOVER</div>
+            <div class="row">
+                <div class="image">
+                    <img src="images/book-img.svg" alt="" />
                 </div>
-                <div class="input-box">
-                    <label for="date">arrivals</label>
-                    <input type="date" id="date" />
-                </div>
-                <div class="input-box">
-                    <label for="date">leaving</label>
-                    <input type="date" id="date" />
-                </div>
-                <div class="input-box">
-                    <input type="submit" class="btn" value="SEARCH" />
-                </div>
-            </form>
+                <form action="">
+                    <div class="input-box">
+                        <label for="">where to</label>
+                        
+                       
+                          <div class="destination-div">
+          
+                            <p> <a class="destinationtag" href="mumbai.html">mumbai</a>  <a class="destinationtag" href="bangalore.html">bangalore</a>
+                             
+                        
+                            
+                          </div>
+                    </div>
+                    
+                </form>
+            </div>
         </div>
-    </div>
+    
+    
+    
+       
+        <script src="js/indexaftersignup.js"></script>
+    </body>
+    
+    </html>
 
 
 
-    <!-- footer -->
-    <!-- <footer class="footer">
-      <div class="footer-container">
-        <div class="footer-box">
-          <h3>quick links</h3>
-          <a href="#home">home</a>
-          <a href="#book">book</a>
-          <a href="#package">package</a>
-          <a href="#service">service</a>
-          <a href="#contact">contact</a>
-        </div>
-        <div class="footer-box">
-          <h3>branches</h3>
-          <a href="#">paris</a>
-          <a href="#">rome</a>
-          <a href="#">hawai</a>
-          <a href="#">sydney</a>
-          <a href="#">los angels</a>
-        </div>
-        <div class="footer-box">
-          <h3>special features</h3>
-          <a href="#">a/c sleeper</a>
-          <a href="#">JBL</a>
-          <a href="#">luminous light</a>
-          <a href="#">comfort drive</a>
-          <a href="#">food & snacks</a>
-        </div>
-        <div class="footer-box">
-          <h3>follow us</h3>
-          <a href="#">instagram</a>
-          <a href="#">facebook</a>
-          <a href="#">twitter</a>
-          <a href="#">youtube</a>
-          <a href="#">pintrest</a>
-        </div>
-      </div>
-    </footer> -->
+   
     <script src="js/indexaftersignup.js"></script>
 </body>
 
